@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTrack - Login / Registro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center; font-weight: bold; font-size: 1.6rem; color: #4a90e2; margin-bottom: 1rem;">
+    Bienvenido a EcoTrack
+    </div>
+    <h2 id="form-title">Iniciar Sesión</h2>
+    <form id="auth-form">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" required />
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" required />
+      <button type="submit" id="submit-btn">Entrar</button>
+    </form>
+    <div class="toggle-link" id="toggle-link">¿No tienes cuenta? Regístrate</div>
+    <div class="error" id="error-msg"></div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

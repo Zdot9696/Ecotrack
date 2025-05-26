@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTrack - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="main-container"></div>
+  <header>
+    <h1>Mis Hábitos EcoTrack</h1>
+    <button class="logout" id="logout-btn">Cerrar sesión</button>
+  </header>
+  <section id="habit-form-section">
+    <form id="habit-form">
+      <input type="hidden" id="habit-id" />
+      <label for="habit-name">Nombre del hábito</label>
+      <input type="text" id="habit-name" placeholder="Ej: Beber agua" required />
+      <label for="habit-frequency">Frecuencia</label>
+      <select id="habit-frequency" required>
+        <option value="" disabled selected>Selecciona frecuencia</option>
+        <option value="diaria">Diaria</option>
+        <option value="semanal">Semanal</option>
+        <option value="mensual">Mensual</option>
+      </select>
+      <button type="submit" id="habit-submit-btn">Agregar hábito</button>
+    </form>
+  </section>
+    </div>
+
+  <ul id="habit-list"></ul>
+  
+
+  <section>
+    <h2>Consejos saludables</h2>
+    <div id="consejos-lista" class="consejo-container"></div>
+  </section>
+
+  <script src="js/habits.js"></script>
+  <script src="js/consejos.js"></script>
+</body>
+</html>

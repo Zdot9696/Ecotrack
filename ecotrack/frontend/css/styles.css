@@ -1,0 +1,207 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #eef2f7;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+h1 {
+  margin: 0;
+  color: #4a90e2;
+}
+button.logout {
+  background-color: #e94e77;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#habit-form {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+#habit-form input, #habit-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#habit-form button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ul#habit-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+}
+ul#habit-list li {
+  background: white;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul#habit-list li span {
+  font-weight: bold;
+}
+ul#habit-list li button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+button.edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+button.delete {
+  background-color: #d9534f;
+  color: white;
+}
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1rem;
+}
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+.toggle-link {
+  margin-top: 1rem;
+  text-align: center;
+  color: #4a90e2;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+@media(max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+  ul#habit-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul#habit-list li button {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Consejos saludables visuales */
+.consejo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.consejo-card {
+  background-color: #ffffff;
+  border-left: 5px solid #4a90e2;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: calc(50% - 1rem);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.consejo-card::before {
+  content: "✅";
+  font-size: 1.2rem;
+  color: #4a90e2;
+  margin-top: 3px;
+}
+
+.consejo-card span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #4a90e2;
+}
+
+@media (max-width: 600px) {
+  .consejo-card {
+    width: 100%;
+  }
+}
+
+.habit-frequency {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.frequency-diaria {
+  background-color: #4CAF50; /* verde */
+}
+
+.frequency-semanal {
+  background-color: #FF9800; /* naranja */
+}
+
+.frequency-mensual {
+  background-color: #2196F3; /* azul */
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
