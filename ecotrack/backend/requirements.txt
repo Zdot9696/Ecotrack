@@ -4,3 +4,5 @@ motor
 pydantic
 python-jose[cryptography]
 passlib[bcrypt]
+requests
+beautifulsoup4

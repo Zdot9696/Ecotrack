@@ -9,7 +9,6 @@ def obtener_consejos_habitos():
     soup = BeautifulSoup(response.text, 'html.parser')
 
     consejos = []
-    # Los consejos están en elementos h2
     for header in soup.find_all('h2'):
         tip = header.get_text(strip=True)  # solo el texto del título
         consejos.append({"tip": tip})
